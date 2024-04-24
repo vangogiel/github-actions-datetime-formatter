@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Actions DateTime Formatter",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/actions*", "https://github.com/*/*/actions?page=*"],
+      "js": ["content.js"]
+    }
+  ],
+  "description": "Display absolute DateTime instead of relative on GitHub Actions page."
+}
